@@ -1,0 +1,23 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: authorization-service
+
+database:
+  packages-to-scan: # packages for entities
+    - com.csp.authorization.**.*
+
+oauth:
+  ui:
+    clientId: csppvtltd
+    clientSecret: csppvtltd$
+    authorizedGrantTypes: password,refresh_token
+    scopes: read,write
+    accessTokenValiditySeconds: 7200
+    refreshTokenValiditySeconds: 240000
+  resource:
+    server:
+      enable : false
+  login.max.attempts: 3

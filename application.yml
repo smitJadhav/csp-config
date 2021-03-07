@@ -16,6 +16,17 @@ spring:
         jdbc.fetch_size: 1000
         jdbc.batch_versioned_data: true
 
+database:
+  url: jdbc:postgresql://localhost:5432/csp_dev?useSSL=false
+  username: postgres
+  password: postgres
+  hikari-properties:
+    autoCommit: false
+    poolName: csp_pool
+    maxPoolSize: 20
+    maxIdleTime: 10000
+    
+jwt.secret: itsasecret
 
 eureka:
   client:
