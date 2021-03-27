@@ -17,7 +17,7 @@ spring:
         jdbc.batch_versioned_data: true
 
 database:
-  url: jdbc:postgresql://host.docker.internal:5432/csp_dev?useSSL=false
+  url: jdbc:postgresql://localhost:5432/csp_dev?useSSL=false
   username: postgres
   password: postgres
   hikari-properties:
