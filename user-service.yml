@@ -1,0 +1,18 @@
+server:
+  port: 9003
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: user-service
+
+database:
+  packages-to-scan: # packages for entities
+    - com.csp.user.**.*
+
+oauth:
+  resource:
+    server:
+      enable : true
+  login.max.attempts: 3
