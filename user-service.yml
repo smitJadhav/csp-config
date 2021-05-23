@@ -16,3 +16,13 @@ oauth:
     server:
       enable : true
   login.max.attempts: 3
+  
+eureka:
+  client:
+    instance:
+      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+      
+user-service-ribbon:
+  ribbon:
+    eureka:
+      enabled: true
