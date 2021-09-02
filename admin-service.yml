@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:0}
+  port: 9002
 
 spring:
   main:
@@ -17,10 +17,10 @@ oauth:
       enable : true
   login.max.attempts: 3
   
-eureka:
-  client:
-    instance:
-      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+#eureka:
+#  client:
+#    instance:
+#      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 #admin-service-ribbon:
 #  ribbon:
