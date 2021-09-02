@@ -21,10 +21,11 @@ eureka:
   client:
     instance:
       instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-      
-admin-service-ribbon:
-  ribbon:
-    eureka:
-      enabled: true
-    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
-    ServerListRefreshInterval: 1000
+
+#admin-service-ribbon:
+#  ribbon:
+#    eureka:
+#      enabled: true
+#    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+#    ServerListRefreshInterval: 1000
+
