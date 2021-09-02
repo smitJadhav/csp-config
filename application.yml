@@ -17,7 +17,7 @@ spring:
         jdbc.batch_versioned_data: true
 
 database:
-  url: jdbc:postgresql://172.24.176.1:5432/csp_dev?useSSL=false
+  url: jdbc:postgresql://192.168.1.24:5432/csp_dev?useSSL=false
   username: postgres
   password: postgres
   hikari-properties:
