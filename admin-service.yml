@@ -22,9 +22,4 @@ oauth:
 #    instance:
 #      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
-ribbon:
-  eureka:
-    enabled: true
-    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
-    ServerListRefreshInterval: 1000
 
